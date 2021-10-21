@@ -4,6 +4,7 @@ import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import BannerImg from 'assets/banner-thumb.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
+import { Link } from 'react-scroll';
 
 export default function Banner() {
   return (
@@ -11,14 +12,20 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products To Explore
+            Top Quality Soy Products From Indonesia
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            Get your products at your place from the leading exporter that supplies best soy products ever.
           </Text>
-          <Button variant="primary">Explore</Button>
+            <Link
+                to="feature"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                <Button variant="primary">Explore</Button>
+            </Link>
         </Box>
 
         <Box sx={styles.banner.imageBox}>

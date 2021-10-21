@@ -66,7 +66,7 @@ const styles = {
       lineHeight: [1.3, null, null, null, 1.2],
       fontWeight: '700',
       letterSpacing: '-.5px',
-      mb: 5,
+      mb: '8px',
     },
   },
   description: {
@@ -74,6 +74,6 @@ const styles = {
     fontWeight: 400,
     lineHeight: [1.85, null, null, 2, null, '2.2'],
     color: 'text_secondary',
-    mb: '30px',
+    mb: '0',
   },
 };

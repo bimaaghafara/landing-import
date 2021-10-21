@@ -9,6 +9,7 @@ import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
 import Feature from '../sections/feature';
 import CoreFeature from '../sections/core-feature';
+import AboutUs from '../sections/about-us';
 import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
@@ -21,14 +22,15 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 005" />
+          <SEO title="Ghafara Universe" />
           <Banner />
+          <AboutUs />
           <KeyFeature />
           <ServiceSection />
           <Feature />
           <CoreFeature />
           <WorkFlow />
-          <Package />
+          {/* <Package /> */}
           <TeamSection />
           <TestimonialCard />
           <BlogSection />

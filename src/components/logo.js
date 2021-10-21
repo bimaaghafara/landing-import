@@ -5,6 +5,11 @@ import { Link } from 'components/link';
 export default function Logo({ src, ...rest }) {
   return (
     <Link
+      style={{
+        textDecoration: 'none',
+        color: '#eee',
+        color: 'currentColor'
+      }}
       path="/"
       sx={{
         variant: 'links.logo',
@@ -14,7 +19,9 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="startup landing logo" />
+      <h3>
+        Ghafara Universe
+      </h3>
     </Link>
   );
 }
